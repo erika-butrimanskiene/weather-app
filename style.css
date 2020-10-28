@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(-90deg, #2d82cc, #0f4c81);
+}
+
+.inputAndButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+.inputAndButtonContainer button {
+  width: 160px;
+  margin-top: 35px;
+  height: 35px;
+  background-color: rgba(250, 246, 7, 0.9);
+  color: #0f4c81;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 30px;
+}
+.inputAndButtonContainer button:focus {
+  outline: none;
+}
+.inputAndButtonContainer button:hover {
+  background-color: white;
+  color: #515152;
+}
+.inputAndButtonContainer input {
+  margin: 40px 25px 0px 25px;
+  border: none;
+  border-bottom: 1.5px solid white;
+  color: white;
+  font-weight: lighter;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  width: 50%;
+}
+.inputAndButtonContainer input:focus {
+  outline: none;
+}
+
+.headerStyle {
+  background-color: white;
+  display: flex;
+}
+.headerStyle p {
+  font-size: 15px;
+  line-height: 50px;
+  font-weight: bolder;
+  color: #0f4c81;
+  font-family: "Roboto", sans-serif;
+  padding-left: 30px;
+}
+.headerStyle img {
+  height: 25px;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.divMainStyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.divMainStyle header {
+  display: flex;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.divMainStyle header p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+  padding-left: 15px;
+  font-weight: lighter;
+}
+.divMainStyle .temperatureAndIcon {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.divMainStyle .temperatureAndIcon p {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  padding: 5px 5px 5px 5px;
+  color: white;
+  font-weight: lighter;
+}
+.divMainStyle .temperatureAndIcon img {
+  height: 45px;
+}
+.divMainStyle .dataDiv {
+  width: 20%;
+  overflow: hidden;
+  height: max-content;
+  margin: 20px;
+  background-color: #0f4677;
+}
+.divMainStyle .dataDiv .humidityAndWindTable {
+  width: 100%;
+  margin-top: 10px;
+}
+.divMainStyle .dataDiv .humidityAndWindTable tr {
+  display: flex;
+  justify-content: center;
+}
+.divMainStyle .dataDiv .humidityAndWindTable tr td {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.divMainStyle .dataDiv .humidityAndWindTable tr td p {
+  margin: 0px 20px;
+  font-size: 18px;
+}
+.divMainStyle .dataDiv .humidityAndWindTable tr td:first-child {
+  border-right: 2px solid #faf607;
+}
+.divMainStyle .dataDiv h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+  color: white;
+  font-weight: lighter;
+}
+.divMainStyle .dataDiv h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 8px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-weight: lighter;
+}
+.divMainStyle .dataDiv .forecastContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0px;
+  width: 100%;
+  padding-right: 15px;
+  height: 40px;
+}
+.divMainStyle .dataDiv .forecastContainer button {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  background: transparent;
+}
+.divMainStyle .dataDiv .forecastContainer button .buttonDropdown {
+  height: 20px;
+  padding-left: 5px;
+}
+.divMainStyle .dataDiv .forecastContainer button:hover i {
+  color: #faf607;
+}
+.divMainStyle .dataDiv .forecastContainer button:focus {
+  outline: none;
+}
+.divMainStyle .dataDiv .forecastDivClass {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+.divMainStyle .dataDiv .forecastDivClass .forecastTable {
+  width: 90%;
+  margin: 0px 10px;
+}
+.divMainStyle .dataDiv .forecastDivClass .forecastTable tr {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: white;
+  justify-content: space-between;
+}
+.divMainStyle .dataDiv .forecastDivClass .forecastTable .secondTr {
+  border-bottom: 1px solid #faf607;
+  border-top: 1px solid #faf607;
+}
+.divMainStyle .dataDiv .forecastDivClass .forecastTable img {
+  height: 15px;
+}
+.divMainStyle .dataDiv .forecastDivClass .forecastTable .tableTemperatureAndIcon {
+  display: flex;
+}
+.divMainStyle .dataDiv .forecastDivClass .forecastTable .tableTemperatureAndIcon p {
+  padding-right: 10px;
+}
+
+.windIcon {
+  height: 18px;
+}
+
+.humidityIcon {
+  height: 18px;
+}
+
+.exitButton {
+  border: 0px;
+  padding: 0px;
+  margin-right: 15px;
+  background: none;
+}
+.exitButton div {
+  margin: 0px;
+  position: relative;
+  border: none;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.exitButton div::before,
+.exitButton div::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #faf607;
+}
+.exitButton div:hover::before {
+  transition-duration: 1s;
+  transform: rotate(45deg);
+}
+.exitButton div:hover::after {
+  transition-duration: 1s;
+  transform: rotate(-45deg);
+}
+
+.exitButton:focus {
+  outline: none;
+}
+
+.buttonForecast {
+  transform: rotate(-180deg);
+  height: 20px;
+  padding-right: 5px;
+}
+
+@media (max-width: 1100px) {
+  .divMainStyle .dataDiv {
+    width: 40%;
+  }
+}
+@media (max-width: 720px) {
+  .divMainStyle .dataDiv {
+    width: 80%;
+  }
+
+  .inputAndButtonContainer button {
+    width: 120px;
+    margin-top: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .inputAndButtonContainer input {
+    margin: 30px 25px 0px 25px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
