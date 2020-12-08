@@ -28,6 +28,7 @@ body.appendChild(divMain);
 divMain.classList.add("divMainStyle");
 const array = [];
 let forecastOpenedArray = [];
+//test this comment
 
 function getCityData(cityName) {
     return fetch(`${url}&q=${cityName}`)
